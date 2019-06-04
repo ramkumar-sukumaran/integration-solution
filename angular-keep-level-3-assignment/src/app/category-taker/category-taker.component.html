@@ -1,0 +1,44 @@
+<!-- Label to display any error messages -->
+<label class="errorMessage">{{ errMessage }}</label>
+
+<!-- Expansion panel to add new notes -->
+<div class="category-container">
+        
+    <mat-expansion-panel class="category-expansion-panel">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                CategoryDetails
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <div class="category-form">
+            <mat-form-field>
+                    <span style="color:red;padding-left: 74px">  *  </span><input matInput placeholder="Category Id" name="Id" [(ngModel)]="cat.categoryId">
+            </mat-form-field>
+
+            <mat-form-field>
+                    <span style="color:red;padding-left: 101px">  *  </span><input matInput placeholder="Category Name" name="categoryName" [(ngModel)]="cat.categoryName">
+            </mat-form-field>
+            
+            <mat-form-field>
+              <!--  <textarea matInput placeholder="text" name="text" [(ngModel)]="note.text"></textarea> -->
+              <span style="color:red;padding-left: 133px">  *  </span><textarea matInput placeholder="Category Description" name="desc" [(ngModel)]="cat.categoryDescription"></textarea> 
+            </mat-form-field>
+
+            
+
+        </div>
+        <button mat-button (click)="addCategory()">Add Catgeory</button>
+    </mat-expansion-panel>
+
+    
+
+</div>
+
+
+
+<!--private int noteId; 
+	private String noteTitle;
+	private String noteContent;
+	private String noteStatus;
+	private Date noteCreationDate;-->

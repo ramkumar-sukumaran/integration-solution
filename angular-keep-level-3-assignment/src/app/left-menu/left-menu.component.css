@@ -1,0 +1,31 @@
+.sidenav-container {
+    height: 100%;
+  }
+  
+  .sidenav {
+    width: 18%;
+    /* background-color: beige; */
+  }
+  .keep-c-toggle-view {
+    width: 100%;
+    margin-left: 80%;
+    cursor: pointer;
+  }
+  .sidenav {
+    background: inherit;
+  }
+  /* .sidenav .mat-toolbar {
+    background: inherit;
+  } */
+  
+  .mat-toolbar.mat-primary {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .category-toggle-view{
+    width: 100%;
+    margin-left:93%;
+    cursor: pointer;
+  }

@@ -1,0 +1,27 @@
+.category-container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 20%;
+}
+
+.category-expansion-panel
+{
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.category-form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.errorMessage
+{
+    color: red;
+    padding-left: 194px;
+
+}

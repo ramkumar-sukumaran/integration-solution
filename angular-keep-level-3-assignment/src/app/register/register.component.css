@@ -1,0 +1,19 @@
+.reg-container
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.reg-form
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* margin-top: 10vh; */
+}
+  

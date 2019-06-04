@@ -1,0 +1,29 @@
+spring:
+# Service registers under this name
+  application:
+    name: CategoryService
+  data:
+    mongodb:
+ #     authentication-database:
+#      username: ${MONGO_USERNAME}
+#      password: ${MONGO_PASSWORD}
+#      database: ${MONGO_DATABASE}
+#      port: ${MONGO_PORT}
+#      host: ${MONGO_HOST}
+      database: keepnote
+      port: 27017
+      host: localhost
+
+server:
+  port: 9400
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+#error:
+#  whitelabel:
+#    enabled: false
